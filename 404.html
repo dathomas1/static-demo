@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | DA Thomas Design</title>
+    <!-- Google Fonts for Noto Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-red: #D32F2F;
+            --primary-red-hover: #B71C1C;
+            --dark-charcoal: #1C1C1C;
+            --soft-warm-white: #FFFFFF;
+            --warm-light-gray: #F4F1F1;
+            --warm-charcoal: #3B3434;
+            --warm-divider: #E8E3E3;
+            --footer-divider: #4A4242;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--dark-charcoal);
+            background-color: var(--soft-warm-white);
+            line-height: 1.65;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 600;
+            color: var(--dark-charcoal);
+        }
+
+        .container-custom {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-red);
+            color: #FFFFFF;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 14px 28px;
+            border-radius: 4px;
+            letter-spacing: 0.3px;
+            transition: all 150ms ease;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-red-hover);
+        }
+
+        .nav-logo {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: var(--dark-charcoal);
+            text-decoration: none;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        .error-card {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .error-code {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 120px;
+            line-height: 1;
+            color: var(--warm-divider);
+            margin-bottom: 20px;
+        }
+
+        /* Hero-style Background for 404 */
+        .bg-subtle-kitchen {
+            position: relative;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.96)), url('https://images.unsplash.com/photo-1556912177-f547c184b895?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-subtle-kitchen">
+
+    <!-- Navigation -->
+    <nav class="py-6 border-b border-[#E8E3E3] bg-white">
+        <div class="container-custom flex justify-between items-center">
+            <a href="index.html" class="nav-logo">DA Thomas Design</a>
+        </div>
+    </nav>
+
+    <!-- Main 404 Content -->
+    <main>
+        <div class="container-custom">
+            <div class="error-card mx-auto">
+                <div class="error-code">404</div>
+                <h1 class="text-[30px] md:text-[38px] leading-[1.2] mb-6">
+                    This page seems to be under renovation.
+                </h1>
+                <p class="text-[16px] md:text-[18px] text-gray-600 mb-10">
+                    The link you followed might be broken, or the page has been moved. Let's get you back to the main site to showcase your projects.
+                </p>
+                <a href="index.html" class="btn-primary">
+                    Return to Homepage
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#3B3434] text-[#EDEAEA] pt-12 pb-8">
+        <div class="container-custom text-center md:text-left">
+            <div class="border-t border-[#4A4242] pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[14px]">
+                    © DA Thomas Design.
+                </p>
+                <p class="text-[14px] opacity-80">
+                    Focused on Florida kitchen and bath remodeling companies.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
