@@ -1,364 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitchen and Bath Remodeler Websites | DA Thomas Design</title>
-    <!-- Google Fonts for Noto Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root {
-            --primary-red: #D32F2F;
-            --primary-red-hover: #B71C1C;
-            --dark-charcoal: #1C1C1C;
-            --soft-warm-white: #FFFFFF;
-            --warm-light-gray: #F4F1F1;
-            --warm-charcoal: #3B3434;
-            --warm-divider: #E8E3E3;
-            --footer-divider: #4A4242;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            color: var(--dark-charcoal);
-            background-color: var(--soft-warm-white);
-            line-height: 1.65;
-        }
-
-        h1, h2 {
-            font-family: 'Noto Sans', sans-serif;
-            font-weight: 600;
-            color: var(--dark-charcoal);
-        }
-
-        h3 {
-            font-family: Arial, sans-serif;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 1.4;
-        }
-
-        .container-custom {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .text-block-width {
-            max-width: 680px;
-        }
-
-        .btn-primary {
-            background-color: var(--primary-red);
-            color: #FFFFFF;
-            font-family: 'Noto Sans', sans-serif;
-            font-weight: 600;
-            font-size: 16px;
-            padding: 14px 28px;
-            border-radius: 4px;
-            letter-spacing: 0.3px;
-            transition: all 150ms ease;
-            display: inline-block;
-            text-align: center;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--primary-red-hover);
-        }
-
-        .section-padding {
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-
-        @media (max-width: 768px) {
-            .section-padding {
-                padding-top: 60px;
-                padding-bottom: 60px;
-            }
-        }
-
-        .input-field {
-            border: 1px solid var(--warm-divider);
-            padding: 12px;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            width: 100%;
-            border-radius: 4px;
-            background: #fff;
-        }
-
-        .input-field:focus {
-            outline: none;
-            border-color: var(--primary-red);
-        }
-
-        label {
-            color: #555555;
-            font-size: 14px;
-            margin-bottom: 4px;
-            display: block;
-        }
-
-        .nav-logo {
-            font-family: 'Noto Sans', sans-serif;
-            font-weight: 600;
-            font-size: 20px;
-            color: var(--dark-charcoal);
-            text-decoration: none;
-        }
-
-        .warm-divider-line {
-            height: 1px;
-            background-color: var(--warm-divider);
-            width: 100%;
-        }
-
-        /* Hero Background Styling */
-        .hero-bg {
-            position: relative;
-            background-image: linear-gradient(rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94)), url('zac-gudakov-unsplash.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-
-        /* Devices Styling */
-        .laptop-mockup {
-            position: relative;
-            background: #e5e7eb;
-            border-radius: 12px;
-            padding: 8px;
-            border: 4px solid #374151;
-        }
-
-        .mobile-mockup {
-            position: relative;
-            width: 240px;
-            height: 480px;
-            background: #111;
-            border: 8px solid #333;
-            border-radius: 32px;
-            overflow: hidden;
-            margin: 0 auto;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-
-        .video-placeholder {
-            position: relative;
-            cursor: pointer;
-            overflow: hidden;
-            border-radius: 4px;
-        }
-
-        .play-button-overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 60px;
-            height: 60px;
-            background: rgba(211, 47, 47, 0.9);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: transform 150ms ease;
-        }
-        
-        .video-placeholder:hover .play-button-overlay {
-            transform: translate(-50%, -50%) scale(1.1);
-        }
-
-        /* Industry Section BG Image */
-        .bg-subtle-industry-image {
-            position: relative;
-            background-image: url('clay-banks-unsplash.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
-    <!-- Generic Favicon -->
-    <link rel="icon" href="icons/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" href="icons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" href="icons/favicon-192x192.png" sizes="192x192">
-
-    <!-- Android Favicon -->
-    <link rel="shortcut icon" sizes="196x196" href="icons/favicon-196x196.png">
-
-    <!-- iOS Favicon -->
-    <link rel="apple-touch-icon" href="icons/favicon-180x180.png" sizes="180x180">
-</head>
-<body>
-
-    <!-- Hero Section -->
-    <header class="section-padding hero-bg">
-        <div class="container-custom">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Kitchen and Bath Remodeler Websites | DA Thomas Design</title>
+      <!-- Google Fonts for Noto Sans -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap" rel="stylesheet">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+         :root {
+         --primary-red: #D32F2F;
+         --primary-red-hover: #B71C1C;
+         --dark-charcoal: #1C1C1C;
+         --soft-warm-white: #FFFFFF;
+         --warm-light-gray: #F4F1F1;
+         --warm-charcoal: #3B3434;
+         --warm-divider: #E8E3E3;
+         --footer-divider: #4A4242;
+         }
+         body {
+         font-family: Arial, sans-serif;
+         color: var(--dark-charcoal);
+         background-color: var(--soft-warm-white);
+         line-height: 1.65;
+         }
+         h1, h2 {
+         font-family: 'Noto Sans', sans-serif;
+         font-weight: 600;
+         color: var(--dark-charcoal);
+         }
+         h3 {
+         font-family: Arial, sans-serif;
+         font-weight: 600;
+         font-size: 18px;
+         line-height: 1.4;
+         }
+         .container-custom {
+         max-width: 1100px;
+         margin: 0 auto;
+         padding: 0 20px;
+         }
+         .text-block-width {
+         max-width: 680px;
+         }
+         .btn-primary {
+         background-color: var(--primary-red);
+         color: #FFFFFF;
+         font-family: 'Noto Sans', sans-serif;
+         font-weight: 600;
+         font-size: 16px;
+         padding: 14px 28px;
+         border-radius: 4px;
+         letter-spacing: 0.3px;
+         transition: all 150ms ease;
+         display: inline-block;
+         text-align: center;
+         }
+         .btn-primary:hover {
+         background-color: var(--primary-red-hover);
+         }
+         .section-padding {
+         padding-top: 100px;
+         padding-bottom: 100px;
+         }
+         @media (max-width: 768px) {
+         .section-padding {
+         padding-top: 60px;
+         padding-bottom: 60px;
+         }
+         }
+         .input-field {
+         border: 1px solid var(--warm-divider);
+         padding: 12px;
+         font-family: Arial, sans-serif;
+         font-size: 16px;
+         width: 100%;
+         border-radius: 4px;
+         background: #fff;
+         }
+         .input-field:focus {
+         outline: none;
+         border-color: var(--primary-red);
+         }
+         label {
+         color: #555555;
+         font-size: 14px;
+         margin-bottom: 4px;
+         display: block;
+         }
+         .nav-logo {
+         font-family: 'Noto Sans', sans-serif;
+         font-weight: 600;
+         font-size: 20px;
+         color: var(--dark-charcoal);
+         text-decoration: none;
+         }
+         .warm-divider-line {
+         height: 1px;
+         background-color: var(--warm-divider);
+         width: 100%;
+         }
+         /* Hero Background Styling */
+         .hero-bg {
+         position: relative;
+         background-image: linear-gradient(rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94)), url('zac-gudakov-unsplash.jpg');
+         background-size: cover;
+         background-position: center;
+         }
+         /* Devices Styling */
+         .laptop-mockup {
+         position: relative;
+         background: #e5e7eb;
+         border-radius: 12px;
+         padding: 8px;
+         border: 4px solid #374151;
+         }
+         .mobile-mockup {
+         position: relative;
+         width: 240px;
+         height: 480px;
+         background: #111;
+         border: 8px solid #333;
+         border-radius: 32px;
+         overflow: hidden;
+         margin: 0 auto;
+         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+         }
+         .video-placeholder {
+         position: relative;
+         cursor: pointer;
+         overflow: hidden;
+         border-radius: 4px;
+         }
+         .play-button-overlay {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 60px;
+         height: 60px;
+         background: rgba(211, 47, 47, 0.9);
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         transition: transform 150ms ease;
+         }
+         .video-placeholder:hover .play-button-overlay {
+         transform: translate(-50%, -50%) scale(1.1);
+         }
+         /* Industry Section BG Image */
+         .bg-subtle-industry-image {
+         position: relative;
+         background-image: url('clay-banks-unsplash.jpg');
+         background-size: cover;
+         background-position: center;
+         }
+      </style>
+      <!-- Generic Favicon -->
+      <link rel="icon" href="icons/favicon-16x16.png" sizes="16x16">
+      <link rel="icon" href="icons/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" href="icons/favicon-192x192.png" sizes="192x192">
+      <!-- Android Favicon -->
+      <link rel="shortcut icon" sizes="196x196" href="icons/favicon-196x196.png">
+      <!-- iOS Favicon -->
+      <link rel="apple-touch-icon" href="icons/favicon-180x180.png" sizes="180x180">
+   </head>
+   <body>
+      <!-- Hero Section -->
+      <header class="section-padding hero-bg">
+         <div class="container-custom">
             <div class="flex flex-col lg:flex-row items-center gap-16">
-                <div class="lg:w-3/5 text-block-width">
-                    <h1 class="text-[30px] md:text-[38px] leading-[1.2] mb-6">
-                        Websites for Kitchen and Bath Remodelers
-                    </h1>
-                    <p class="text-[18px] md:text-[16px] mb-8">
-                        I build websites for kitchen and bathroom remodeling companies that want to showcase their work and set expectations before the first call.
-                    </p>
-                    <a href="#walkthrough" class="btn-primary">
-                        Send Video Walkthrough
-                    </a>
-                </div>
-                <div class="lg:w-2/5 w-full">
-                    <div class="laptop-mockup shadow-xl">
-                        <div class="bg-white rounded overflow-hidden">
-                            <img src="laptop.png" 
-                                 alt="Clean kitchen portfolio website mockup" 
-                                 class="w-full h-auto">
-                        </div>
-                    </div>
-                </div>
+               <div class="lg:w-3/5 text-block-width">
+                  <h1 class="text-[30px] md:text-[38px] leading-[1.2] mb-6">
+                     Websites for Kitchen and Bath Remodelers
+                  </h1>
+                  <p class="text-[18px] md:text-[16px] mb-8">
+                     I build websites for kitchen and bathroom remodeling companies that want to showcase their work and set expectations before the first call.
+                  </p>
+                  <p>Sign up for a short video walkthrough that reflects the consistency and quality I produce with every website. </p>
+                  <a href="#walkthrough" class="btn-primary">
+                  Send Video Walkthrough
+                  </a>
+               </div>
+               <div class="lg:w-2/5 w-full">
+                  <div class="laptop-mockup shadow-xl">
+                     <div class="bg-white rounded overflow-hidden">
+                        <img src="laptop.png" 
+                           alt="Clean kitchen portfolio website mockup" 
+                           class="w-full h-auto">
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </header>
-
-    <!-- Why This Matters Section -->
-    <section class="section-padding">
-        <div class="container-custom">
-            <div class="text-block-width text-center mx-auto">
-                <h2 class="text-[24px] md:text-[30px] leading-[1.3] mb-8">Homeowners Research Before Calling</h2>
-                <div class="space-y-4 text-[18px] md:text-[20px]">
-                    <p>They look through project photos. They read reviews. They try to understand who feels established and professional.</p>
-                    <p>Your online presence plays a role in that early evaluation. A clear, well-structured website helps reflect the quality of your work before the first conversation even happens.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- What I Focus On Section (2 Column with Mobile Mockup) -->
-    <section class="py-8 bg-[#F4F1F1]">
-        <div class="container-custom">
-            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
-                <div class="md:w-1/2">
-                    <h2 class="text-[24px] md:text-[30px] leading-[1.3] mb-8">What I Focus On</h2>
-                    <ul class="space-y-2">
-                        <li class="flex items-start">
-                            <span class="text-[#D32F2F] mr-3 mt-1">•</span>
-                            <span>Organizing project galleries so craftsmanship is easy to review</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#D32F2F] mr-3 mt-1">•</span>
-                            <span>Making sites fast and mobile-friendly</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#D32F2F] mr-3 mt-1">•</span>
-                            <span>Structuring pages so homeowners understand your process</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-[#D32F2F] mr-3 mt-1">•</span>
-                            <span>Helping set expectations before the initial call</span>
-                        </li>
-                    </ul>
-                    <div class="mt-10 pt-6 border-t border-[#E8E3E3] italic opacity-80 text-sm">
-                        The goal is simple: Present your work clearly and professionally.
-                    </div>
-                </div>
-                <div class="md:w-1/2 flex justify-center">
-                    
-                        <img src="phone.png" 
-                             alt="Mobile-friendly kitchen portfolio" 
-                             class="h-full object-cover">
-                  
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Kitchen Remodelers Section (Translucent White Box) -->
-    <section class="section-padding bg-subtle-industry-image">
-        <div class="container-custom">
-            <div class="max-w-[720px] mx-auto bg-white/80 backdrop-blur-md p-8 md:p-12 rounded-sm shadow-sm">
-                <h2 class="text-[24px] md:text-[30px] leading-[1.3] mb-6">Websites that reflect your reputation.</h2>
-                <div class="space-y-4 text-[16px] md:text-[20px]">
-                    <p>Remodeling is detail-driven, high-commitment work.</p>
-                    <p>You look closely at finishes, layouts, and overall presentation. Your website should reflect the same level of care and clarity that goes into your projects.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section-padding bg-white">
-        <div class="container-custom">
-            <div class="max-w-[800px] mx-auto flex flex-col md:flex-row items-start gap-12">
-                <div class="w-32 h-32 md:w-48 md:h-48 flex-shrink-0">
-                    <img src="darnell.jpg" 
-                         alt="Professional web builder headshot" 
-                         class="w-full h-full object-cover rounded shadow-sm grayscale-[0.2]">
-                </div>
-                <div>
-                    <h2 class="text-[24px] md:text-[30px] leading-[1.3] mb-6">About Me</h2>
-                    <div class="space-y-4 text-[15px] md:text-[16px]">
-                        <p>I’m Darnell Thomas and Florida-based like you. I work with service businesses, with a focus on kitchen and bath remodeling companies.</p>
-                        <p>I handle the work directly. Clean builds. Clear structure. Thoughtful presentation.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- The Walkthrough Section -->
-    <section id="walkthrough" class="section-padding bg-[#F4F1F1]">
-        <div class="container-custom">
+         </div>
+      </header>
+      <!-- The Walkthrough Section -->
+      <section id="walkthrough" class="section-padding bg-[#F4F1F1]">
+         <div class="container-custom">
             <div class="max-w-[900px] mx-auto bg-white p-6 md:p-12 shadow-sm rounded-sm">
-                <div class="flex flex-col lg:flex-row gap-12">
-                    <div class="lg:w-1/2">
-                        <h3 class="text-[20px] mb-6">The 5-Minute Walkthrough</h3>
-                        
-                        <div class="video-placeholder mb-8 border border-gray-200 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600" 
-                                 alt="Video preview" class="w-full h-48 object-cover opacity-60">
-                            <div class="play-button-overlay">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-                                    <path d="M8 5v14l11-7z"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <ul class="text-sm space-y-4">
-                            <li class="flex items-start"><span class="text-[#D32F2F] mr-2">•</span> Communicating your company values immediately</li>
-                            <li class="flex items-start"><span class="text-[#D32F2F] mr-2">•</span> How your projects can be presented more clearly</li>
-                            <li class="flex items-start"><span class="text-[#D32F2F] mr-2">•</span> A simple structural improvement you can implement</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="lg:w-1/2 bg-[#F4F1F1] p-8 rounded">
-                        <div class="space-y-4">
-                            <iframe data-tally-src="https://tally.so/embed/rjdRJL?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="448" frameborder="0" marginheight="0" marginwidth="0" title="Video Request
-"></iframe>
-<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-                            <p class="text-[12px] text-gray-500 text-center mt-4">
-                                Even if we don’t work together, this should give you a clearer perspective on how your company is presented online.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+               <div class="flex flex-col lg:flex-row gap-12">
+                  <div class="lg:w-1/2">
+                     <h2 class="text-[24px] md:text-[30px] leading-[1.3] mb-8">Sign Up for a Video Walkthrough of Website Best-Practices</h2>
+                     <ul class="space-y-2">
+                        <li class="flex items-start">
+                           <span class="text-[#D32F2F] mr-3 mt-1">•</span>
+                           <span>Organizing project galleries so craftsmanship is easy to review</span>
+                        </li>
+                        <li class="flex items-start">
+                           <span class="text-[#D32F2F] mr-3 mt-1">•</span>
+                           <span>Making sites fast and mobile-friendly</span>
+                        </li>
+                        <li class="flex items-start">
+                           <span class="text-[#D32F2F] mr-3 mt-1">•</span>
+                           <span>Structuring pages so homeowners understand your process</span>
+                        </li>
+                        <li class="flex items-start">
+                           <span class="text-[#D32F2F] mr-3 mt-1">•</span>
+                           <span>Helping set expectations before the initial call</span>
+                        </li>
+                     </ul>
+                     <div class="mt-10 pt-6 border-t border-[#E8E3E3] italic opacity-80 text-sm">
+                        The goal is simple: Present your work clearly and professionally.
+                     </div>
+                  </div>
+                  <div class="lg:w-1/2 bg-[#F4F1F1] p-8 rounded">
+                     <div class="space-y-4">
+                        <iframe data-tally-src="https://tally.so/embed/rjdRJL?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="448" frameborder="0" marginheight="0" marginwidth="0" title="Video Request
+                           "></iframe>
+                        <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+                        <p class="text-[12px] text-gray-500 text-center mt-4">
+                           Even if we don’t work together, this should give you a clearer perspective on how your company is presented online.
+                        </p>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-[#3B3434] text-[#EDEAEA] pt-12 pb-8">
-        <div class="container-custom text-center md:text-left">
+         </div>
+      </section>
+      <!-- What I Focus On Section (2 Column with Mobile Mockup) -->
+      <section class="py-8">
+         <div class="container-custom">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
+               <div class="md:w-1/2">
+                  <h2 class="text-[24px] md:text-[30px] leading-[1.3] mb-8">Homeowners Research Before Calling</h2>
+                  <div class="space-y-4 text-[18px] md:text-[20px]">
+                     <p>They look through project photos. They read reviews. They try to understand who feels established and professional.</p>
+                     <p>Your online presence plays a role in that early evaluation. A clear, well-structured website helps reflect the quality of your work before the first conversation even happens.</p>
+                  </div>
+               </div>
+               <div class="md:w-1/2 flex justify-center">
+                  <img src="phone.png" 
+                     alt="Mobile-friendly kitchen portfolio" 
+                     class="h-full object-cover">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Why Kitchen Remodelers Section (Translucent White Box) -->
+      <section class="section-padding bg-subtle-industry-image">
+         <div class="container-custom">
+            <div class="max-w-[720px] mx-auto bg-white/80 backdrop-blur-md p-8 md:p-12 rounded-sm shadow-sm">
+               <h2 class="text-[24px] md:text-[30px] leading-[1.3] mb-6">Websites that reflect your reputation.</h2>
+               <div class="space-y-4 text-[16px] md:text-[20px]">
+                  <p>Remodeling is detail-driven, high-commitment work.</p>
+                  <p>You look closely at finishes, layouts, and overall presentation. Your website should reflect the same level of care and clarity that goes into your projects.</p>
+                  <a href="#walkthrough-form" class="btn-primary">
+                  Send Video Walkthrough
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- About Section -->
+      <section class="section-padding bg-white">
+         <div class="container-custom">
+            <div class="max-w-[800px] mx-auto flex flex-col md:flex-row items-start gap-12">
+               <div class="w-32 h-32 md:w-48 md:h-48 flex-shrink-0">
+                  <img src="darnell.jpg" 
+                     alt="Professional web builder headshot" 
+                     class="w-full h-full object-cover rounded shadow-sm grayscale-[0.2]">
+               </div>
+               <div>
+                  <h2 class="text-[24px] md:text-[30px] leading-[1.3] mb-6">About Me</h2>
+                  <div class="space-y-4 text-[15px] md:text-[16px]">
+                     <p>I’m Darnell Thomas and Florida-based like you. I work with service businesses, with a focus on kitchen and bath remodeling companies.</p>
+                     <p>I handle the work directly. Clean builds. Clear structure. Thoughtful presentation.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- The Walkthrough Section -->
+      <section id="walkthrough-form" class="section-padding bg-[#F4F1F1]">
+         <div class="container-custom">
+            <div class="max-w-[900px] mx-auto bg-white p-6 md:p-12 shadow-sm rounded-sm">
+               <h2 class="text-center text-[24px] md:text-[30px] leading-[1.3] mb-8">Get Video Walkthrough of Website</h2>
+               <div class="bg-[#F4F1F1] p-8 rounded mx-auto">
+                  <div class="space-y-4">
+                     <iframe data-tally-src="https://tally.so/embed/rjdRJL?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="448" frameborder="0" marginheight="0" marginwidth="0" title="Video Request
+                        "></iframe>
+                     <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+                     <p class="text-[12px] text-gray-500 text-center mt-4">
+                        Even if we don’t work together, this should give you a clearer perspective on how your company is presented online.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer class="bg-[#3B3434] text-[#EDEAEA] pt-12 pb-8">
+         <div class="container-custom text-center md:text-left">
             <div class="border-t border-[#4A4242] pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-                <p class="text-[14px]">
-                    © DA Thomas Design.
-                </p>
-                <p class="text-[14px] opacity-80">
-                    Focused on Florida kitchen and bath remodeling companies.
-                </p>
+               <p class="text-[14px]">
+                  © DA Thomas Design.
+               </p>
+               <p class="text-[14px] opacity-80">
+                  Focused on Florida kitchen and bath remodeling companies.
+               </p>
             </div>
-        </div>
-    </footer>
-
-</body>
+         </div>
+      </footer>
+   </body>
 </html>
